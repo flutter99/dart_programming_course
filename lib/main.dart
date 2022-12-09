@@ -51,17 +51,52 @@ void main() {
   //   print('Age at index $i  : ${age[i]}');
   // }
 
-  int x = 10;
-  int y = 20;
+  // int x = 10;
+  // int y = 20;
 
-  var operation = '-';
+  // var operation = '-';
 
-  switch (operation) {
-    case '+':
-      print(x + y);
-      break;
-    case '-':
-      print(x - y);
-      return;
-  }
+  // switch (operation) {
+  //   case '+':
+  //     print(x + y);
+  //     break;
+  //   case '-':
+  //     print(x - y);
+  //     return;
+  // }
+
+  Map map = Map();
+
+  map = {
+    'name': "Bilal Ahmad",
+    'age': 24,
+  };
+
+  print(map);
+  print(map['name']);
+  print(map['age']);
+
+  Map<String, int> map1 = Map();
+
+  map1 = {
+    'age1': 24,
+    'age2': 40,
+  };
+
+  print(map1);
+  print(map1['age1']);
+  print(map1['age2']);
+
+  Map<String, dynamic> mapItems = {
+    'name': 'Bilal Ahmad',
+    'age': 40,
+    'description': {'class': '9th Class', 'marks': '900'},
+  };
+
+  print(mapItems);
+  print(mapItems['name']);
+  print(mapItems['age']);
+  print(mapItems['description']);
+  print(mapItems['description']['class']);
+  print(mapItems['description']['marks']);
 }
