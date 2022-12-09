@@ -32,22 +32,36 @@ void main() {
   // print(names.removeLast());
   // print(names.reversed.toList());
 
-  List<int> age = [];
+  // List<int> age = [];
 
-  int valLength;
-  int newAge = 0;
+  // int valLength;
+  // int newAge = 0;
 
-  stdout.write('Please Enter the Length of the Numbers');
-  valLength = int.parse(stdin.readLineSync()!);
+  // stdout.write('Please Enter the Length of the Numbers');
+  // valLength = int.parse(stdin.readLineSync()!);
 
-  for (int i = 0; i < valLength; i++) {
-    stdout.write('Enter Age: ');
-    newAge = int.parse(stdin.readLineSync()!);
+  // for (int i = 0; i < valLength; i++) {
+  //   stdout.write('Enter Age: ');
+  //   newAge = int.parse(stdin.readLineSync()!);
 
-    age.add(newAge);
-  }
+  //   age.add(newAge);
+  // }
 
-  for (int i = 0; i < age.length; i++) {
-    print('Age at index $i  : ${age[i]}');
+  // for (int i = 0; i < age.length; i++) {
+  //   print('Age at index $i  : ${age[i]}');
+  // }
+
+  int x = 10;
+  int y = 20;
+
+  var operation = '-';
+
+  switch (operation) {
+    case '+':
+      print(x + y);
+      break;
+    case '-':
+      print(x - y);
+      return;
   }
 }
